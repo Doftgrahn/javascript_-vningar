@@ -9,8 +9,8 @@ let password = prompt('skriv in');
 if (password == 'kanel') {
   console.log(true);
 } else {
-  console.log(false);
-}
+  console.log(false)
+};
 
 /*
 2 Skriv ett program som frågar användaren efter ett tal.
@@ -83,6 +83,11 @@ let tal = prompt('Skriv in tal här);
 
         let bigNumber = 65536;
 
+        if (bigNumber > 2) {
+          for (var i = 0; i < array.length; i++) {
+            array[i]
+          }
+        }
 
 
 
@@ -94,12 +99,46 @@ let tal = prompt('Skriv in tal här);
          Fortsätt loopa tills användaren skickar en tom sträng eller en punkt.
         */
 
+        let userInput = prompt('Skriv in något här');
+
+        /*7b. Skriv ett program som skriver ut de jämna talen 20 till 2 i den ordningen, med hjälp av en loop.*/
+
+        function evenNumbers() {
+          for (x = 2; x <= 20; x++) {
+            if ((x % 2) == 0)
+              console.log(x);
+          }
+        };
+
+
+        function oddNumbers() {
+          for (x = 2; x <= 20; x++) {
+            if ((x % 3) == 0)
+              console.log(x);
+          }
+        }; evenNumbers(); oddNumbers();
+//Får den inte att loopa neråt.
+        /*
+        8. Skriv ett program som frågar användaren efter ett tal.
+        Programmet ska loopa så länge som talet är större än 2.
+        Varje loop ska programmet välja: om talet är udda, multiplicera talet med 3 och lägg till 1.
+        Om talet är jämnt, dela det med 2. Skriv ut det nya talet varje varv i loopen.*/
+
+        // att göra!
 
 
 
 
-
-
-
-
-        Console.log('slut på sidan');
+        /*9a Vad kommer följande kod att skriva ut?
+let text = '';
+for( let i=0; i<6; i++ ) {
+	for( let j=0; j<12; j++ ) {
+		if( (i + j) % 2 === 0)
+			text += '#';
+		else
+			text += '.';
+	}
+	text += '\n';
+}
+*/
+console.log(text);
